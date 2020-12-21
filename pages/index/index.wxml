@@ -1,0 +1,9 @@
+<view>
+  <view class="p">纬度：{{latitude}}</view>
+  <view class="p">经度：{{longitude}}</view>
+  <view class="p">通过 wx.authorize 和 wx.openSetting 授权：</view>
+  <button type="primary" bindtap="onGetLocation">获取位置信息</button>
+  <view class="p">通过 open-type="openSetting" 授权：</view>
+  <button wx:if="{{ifFirstAuth || ifAuthorized}}" type="primary" bindtap="onGetLocation2">获取位置信息1</button>
+  <button wx:else type="primary" open-type="openSetting" bindopensetting="onOpenSetting">获取位置信息2</button>
+</view>

@@ -1,0 +1,4 @@
+/**index.wxss**/
+.p {
+  margin: 8px 0;
+}
